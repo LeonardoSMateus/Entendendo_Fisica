@@ -1,0 +1,10 @@
+.altura{
+    position: relative;
+    overflow: auto;
+    height: 100px;
+}
+
+body{
+    background: black;
+}
+
