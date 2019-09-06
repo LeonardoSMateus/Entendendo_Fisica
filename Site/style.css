@@ -5,6 +5,38 @@
 }
 
 #sobre{
+    width: 100%;
+    height: 1000px; 
     background-image: url(Imagens/fundo3.jpg);
 }
 
+#divtexto{
+    width: 40%;
+    height: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#divslide{
+    width: 40%;
+    height: 500px;
+    float: right;
+}
+
+#slide1{
+    width: 400px;
+    height: 170px;
+}
+
+#slide2{
+    width: 400px;
+    height: 170px;
+}
+
+#slide3{
+    width: 400px;
+    height: 170px;
+}
+
+#team{
+    height: 500px;
+}
