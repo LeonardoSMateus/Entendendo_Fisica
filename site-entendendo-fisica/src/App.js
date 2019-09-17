@@ -11,6 +11,7 @@ function App() {
     <div className="App">
         <HeaderNavbar/>
         <About/>
+        <TabsNav/>
         <SliderCarousel
           carouselProps={{showArrows:true, showIndicators:true}}
           styleCustom="CarouselSt"
@@ -22,7 +23,7 @@ function App() {
             require("./Assets/Imagens/Leonardo/dados-L.png"),
             require("./Assets/Imagens/Nathan/dados-N.png")
         ]}/>
-        <TabsNav/>
+    
  
     </div>
   );

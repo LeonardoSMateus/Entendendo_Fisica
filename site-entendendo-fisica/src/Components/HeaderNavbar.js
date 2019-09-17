@@ -12,9 +12,9 @@ export default class HeaderNavbar extends React.Component{
                     <Navbar bg="primary" variant="dark">
                         <Navbar.Brand href="#home">Entendendo Fisica</Navbar.Brand>
                         <Nav className="mr-auto">
-                        <Nav.Link href="#features">Sobre</Nav.Link>
-                        <Nav.Link href="#home">Conteudos</Nav.Link>
-                        <Nav.Link href="#features">Participantes</Nav.Link>
+                        <Nav.Link href="#sobre">Sobre</Nav.Link>
+                        <Nav.Link href="#conteudo">Conteudos</Nav.Link>
+                        <Nav.Link href="#time">Participantes</Nav.Link>
                         </Nav>
                         <Form inline>
                         <FormControl type="text" placeholder="" className="mr-sm-2" />

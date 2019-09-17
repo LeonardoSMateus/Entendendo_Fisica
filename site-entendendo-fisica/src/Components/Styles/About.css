@@ -1,5 +1,5 @@
 .Carousel{
-    max-height: 150px;
-
+    max-height: 350px;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }

@@ -17,7 +17,7 @@ export default class Chapter extends React.Component{
             }
           };
         return (
-            <div>
+            <div id="conteudo">
                 <h1> {this.chapterInfo.title} </h1>
                 {this.chapterInfo.videos.map((video, index)=>
                     <div key={index}>

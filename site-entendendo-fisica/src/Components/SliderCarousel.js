@@ -2,6 +2,7 @@ import React from 'react';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import './Styles/SliderCarousel.css';
 
 export default class SliderCarousel extends React.Component{
 
@@ -13,6 +14,7 @@ export default class SliderCarousel extends React.Component{
     }
     render(){
         return (<Carousel 
+                    id="time"
                     showArrows={this.carouselProps.showArrows} 
                     showStatus={false} showThumbs={false} 
                     autoPlay={true} 
@@ -26,6 +28,9 @@ export default class SliderCarousel extends React.Component{
                         </div>
                         
                     )}
+                    <br/>
+                    <br/>
+                    <br/>
                 </Carousel>
         );
     }

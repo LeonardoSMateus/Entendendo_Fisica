@@ -32,8 +32,7 @@ export default class TabsNav extends React.Component{
                             }
                         ]
                     }}/>
-                </Tab>
-
+                </Tab>      
             </Tabs>
         );
     }
