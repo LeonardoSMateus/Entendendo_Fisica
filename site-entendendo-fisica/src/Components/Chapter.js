@@ -2,31 +2,29 @@ import React from 'react';
 
 import Youtube from 'react-youtube';
 
-export default class Chapter extends React.Component{
+export default class Chapter extends React.Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
         this.chapterInfo = props.chapterInfo;
     }
-    render(){
+    render() {
         const opts = {
             height: '390',
             width: '640',
             playerVars: { // https://developers.google.com/youtube/player_parameters
-              autoplay: 0
+                autoplay: 0
             }
-          };
+        };
         return (
             <div id="conteudo">
                 <h1> {this.chapterInfo.title} </h1>
-                {this.chapterInfo.videos.map((video, index)=>
-                    <div key={index}>
-                        <Youtube videoId={video.videoId} 
-                            opts={opts}
-                            onReady={this._onReady}
-                           />
-                    </div>
-                 )}
+
+                <Youtube videoId={this.chapterInfo.videos[this.chapterInfo.currentIndex].videoId}
+                    opts={opts}
+                    onReady={this._onReady}
+                />
+
             </div>
         );
     }
