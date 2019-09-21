@@ -6,64 +6,48 @@ import './Styles/About.css';
 export default class About extends React.Component {
     render() {
         return (
-            <Container id="sobre">
-                <Row>
-                    <Col>
-                        <br />
-                        <p>
-                            Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000
-                            anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC.
-                            Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais
-                            obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por
-                            entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem
-                            das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de
-                            Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da
-                            Renascença. A primeira linha de Lorem Ipsum, "Lorem Ipsum dolor sit amet..." vem de uma linha na
-                            seção 1.10.32.
-                    </p>
-                        <p>
-                            O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os
-                            interessados. Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cicero também foram
-                            reproduzidas abaixo em sua forma exata original, acompanhada das versões para o inglês da tradução
-                            feita por H. Rackham em 1914.
-                    </p>
-                        <p>
-                            Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos,
-                            suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock,
-                            um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim,
-                            consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica,
-                            descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum"
-                            (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na
-                            época da Renascença. A primeira linha de Lorem Ipsum, "Lorem Ipsum dolor sit amet..." vem de uma linha na seção 1.10.32.
-                    </p>
-                        <p>
-                            O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os interessados.
-                            Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cicero também foram reproduzidas abaixo em sua forma
-                            exata original, acompanhada das versões para o inglês da tradução feita por H. Rackham em 1914.
-                    </p>
-                    </Col>
-                    <Col>
-                        <br />
-                        <SliderCarousel
-                            styleCustom="Carousel"
-                            carouselProps={{ showArrows: false, showIndicators: false }}
-                            images={[
-                                require('../Assets/Imagens/Projeto/ft1.jpg'),
-                                require("../Assets/Imagens/Projeto/ft2.jpg")
-                            ]}
-                        />
-                        <br />
-                        <SliderCarousel
-                            styleCustom="Carousel"
-                            carouselProps={{ showArrows: false, showIndicators: false }}
-                            images={[
-                                require('../Assets/Imagens/Projeto/ft3.jpg'),
-                                require("../Assets/Imagens/Projeto/ft4.jpg")
-                            ]}
-                        />
-                    </Col>
-                </Row>
-            </Container>
+            <div id="Sobre">
+                <Container>
+                    <Row>
+                        <Col id="Texto">
+                            <br />
+                            <p>
+                                O projeto entendendo física foi idealizado em 2018/1, possuindo o objetivo de ajudar alunos da UTFPR. 
+                                A ideia surgiu através de uma permanência da professora Sandra Domiciano, quando os membros fizeram uma pequena análise do porque 
+                                existe grande dificuldade na matéria de física, e foi notado que os mesmos geralmente não realizam exercícios e não 
+                                comparecem em permanências/monitorias para sanar suas dúvidas.
+                            </p>
+                            <p>    
+                                Portanto, o objetivo do projeto entendendo física é facilitar o acesso à exercícios propostos em sala, sendo 
+                                então possível o aluno se orientar facilmente por meio de vídeos educativos, logo reforçando os conceitos, 
+                                consolidando os conhecimentos aprendidos em sala e potencializar a aprendizagem.
+                            </p>
+                  
+                         </Col>
+                        <Col>
+                            <br />
+                            <SliderCarousel
+                                styleCustom="Carousel"
+                                carouselProps={{ showArrows: false, showIndicators: false }}
+                                images={[
+                                    require('../Assets/Imagens/Projeto/ft1.jpg'),
+                                    require("../Assets/Imagens/Projeto/ft2.jpg")
+                                ]}
+                            />
+                            <br />
+                            <SliderCarousel
+                                styleCustom="Carousel"
+                                carouselProps={{ showArrows: false, showIndicators: false }}
+                                images={[
+                                    require('../Assets/Imagens/Projeto/ft3.jpg'),
+                                    require("../Assets/Imagens/Projeto/ft4.jpg")
+                                ]}
+                            />
+                         </Col>
+                     </Row>
+                 </Container>
+             </div>
+            
         );
     }
 }

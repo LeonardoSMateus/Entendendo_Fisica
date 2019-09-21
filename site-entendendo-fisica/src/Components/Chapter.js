@@ -1,6 +1,6 @@
 import React from 'react';
-
 import Youtube from 'react-youtube';
+import './Styles/Chapter.css'
 
 export default class Chapter extends React.Component {
 
@@ -17,7 +17,7 @@ export default class Chapter extends React.Component {
             }
         };
         return (
-            <div id="conteudo">
+            <div id="Conteudo">
                 <h1> {this.chapterInfo.title} </h1>
 
                 <Youtube videoId={this.chapterInfo.videos[this.chapterInfo.currentIndex].videoId}
