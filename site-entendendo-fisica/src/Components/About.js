@@ -10,7 +10,6 @@ export default class About extends React.Component {
                 <Container>
                     <Row>
                         <Col id="Texto">
-                            <br />
                             <p>
                                 O projeto entendendo física foi idealizado em 2018/1, possuindo o objetivo de ajudar alunos da UTFPR. 
                                 A ideia surgiu através de uma permanência da professora Sandra Domiciano, quando os membros fizeram uma pequena análise do porque 
@@ -24,8 +23,7 @@ export default class About extends React.Component {
                             </p>
                   
                          </Col>
-                        <Col>
-                            <br />
+                        <Col id="Carousel-img">
                             <SliderCarousel
                                 styleCustom="Carousel"
                                 carouselProps={{ showArrows: false, showIndicators: false }}

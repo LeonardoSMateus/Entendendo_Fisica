@@ -8,11 +8,17 @@
     font-size: 23.4px;
     position: relative;
     text-align: justify; 
+    margin-top: 25px;
+}
+
+#Carousel-img{
+    margin-top:36px;
 }
 
 #Sobre{
     background-color:rgb(86, 176, 228);
     max-height: 2000px;
 }
+
 
 /**/
