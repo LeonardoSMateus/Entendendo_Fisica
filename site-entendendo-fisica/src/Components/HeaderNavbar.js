@@ -12,17 +12,16 @@ import './Styles/HeaderNavbar.css';
 export default class HeaderNavbar extends React.Component{
     render(){
         return ( <div width="100%">
-                    <Navbar bg="primary" variant="dark">
+                    <Navbar bg="dark" variant="dark">
                         <Navbar.Brand href="#home">Entendendo Fisica</Navbar.Brand>
                         <Nav className="mr-auto">
-                        <i className="fa fa-trash"></i>
                         <Nav.Link href="#Sobre" id="menu">Sobre</Nav.Link>
                         <Nav.Link href="#Conteudo">Conteudos</Nav.Link>
                         <Nav.Link href="#Time">Participantes</Nav.Link>
                         </Nav>
                         <Form inline>
                         <FormControl type="text" placeholder="" className="mr-sm-2" />
-                        <Button variant="outline-light">Pesquisar</Button>
+                        <Button variant="outline-info">Pesquisar</Button>
                         </Form>
                     </Navbar>
 

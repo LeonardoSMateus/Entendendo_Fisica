@@ -20,7 +20,7 @@ export default class SliderCarousel extends React.Component{
                     autoPlay={true} 
                     infiniteLoop={true} 
                     showIndicators={this.carouselProps.showIndicators}>
-
+                    
                     {this.images.map((image, index) => 
 
                          <div key={index} className={this.styleCustom}>
@@ -28,9 +28,6 @@ export default class SliderCarousel extends React.Component{
                         </div>
                         
                     )}
-                    <br/>
-                    <br/>
-                    <br/>
                 </Carousel>
         );
     }

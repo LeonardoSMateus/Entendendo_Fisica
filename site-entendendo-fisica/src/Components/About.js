@@ -31,7 +31,8 @@ export default class About extends React.Component {
                                 carouselProps={{ showArrows: false, showIndicators: false }}
                                 images={[
                                     require('../Assets/Imagens/Projeto/ft1.jpg'),
-                                    require("../Assets/Imagens/Projeto/ft2.jpg")
+                                    require("../Assets/Imagens/Projeto/ft2.jpg"),
+                                    require('../Assets/Imagens/Projeto/ft3.jpg')
                                 ]}
                             />
                             <br />
@@ -39,8 +40,8 @@ export default class About extends React.Component {
                                 styleCustom="Carousel"
                                 carouselProps={{ showArrows: false, showIndicators: false }}
                                 images={[
-                                    require('../Assets/Imagens/Projeto/ft3.jpg'),
-                                    require("../Assets/Imagens/Projeto/ft4.jpg")
+                                    require('../Assets/Imagens/Projeto/ft4.jpg'),
+                                    require("../Assets/Imagens/Projeto/ft5.jpg")
                                 ]}
                             />
                          </Col>
