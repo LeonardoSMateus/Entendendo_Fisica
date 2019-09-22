@@ -47,6 +47,7 @@ export default class About extends React.Component {
                          </Col>
                      </Row>
                  </Container>
+                 <br/>
              </div>
             
         );

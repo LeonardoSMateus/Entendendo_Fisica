@@ -30,7 +30,7 @@ export default class TabsNav extends React.Component {
                                         "title": "Exercicio 3",
                                         "videoId": "aBlKPLeLU_s"
                                      }, {
-                                        "title": "Exercicio 3",
+                                        "title": "Exercicio 4",
                                         "videoId": "aBlKPLeLU_s"
                                      }
                                     ].map((video, index) =>
