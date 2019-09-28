@@ -22,7 +22,7 @@ export default class Team extends React.Component {
                                     <label>Função: Orientadora do Projeto</label>
                                     <label>        Professora do Projeto</label>
                                 </p>
-                                <a href="#" className="btn btn-outline-primary" id="button">Facebook</a>
+                                <a href="https://www.facebook.com/sandramara.domiciano.9" className="btn btn-outline-primary" id="button">Facebook</a>
                                 <a href="#" className="btn btn-outline-danger" id="button">Instagram</a>
                                 <a href="#" className="btn btn-outline-info" id="button">Linkedin</a>
                             </div>
@@ -39,7 +39,7 @@ export default class Team extends React.Component {
                                    <label>Função: Diretor da Comunicação</label>
                                    <label>Curso: Engenharia da Computação</label>
                                 </p>
-                                <a href="#" className="btn btn-outline-primary"id="button">Facebook</a>
+                                <a href="https://www.facebook.com/adilson.frankeneia" className="btn btn-outline-primary"id="button">Facebook</a>
                                 <a href="#" className="btn btn-outline-danger"id="button">Instagram</a>
                                 <a href="#" className="btn btn-outline-info"id="button">Linkedin</a>
                             </div>
@@ -56,7 +56,7 @@ export default class Team extends React.Component {
                                     <label>Função: Desenvolvedor Web</label>
                                     <label>Curso: Engenharia da Computação</label>
                                 </p>
-                                <a href="#" className="btn btn-outline-primary"id="button">Facebook</a>
+                                <a href="https://www.facebook.com/profile.php?id=100007281492993" className="btn btn-outline-primary"id="button">Facebook</a>
                                 <a href="#" className="btn btn-outline-danger"id="button">Instagram</a>
                                 <a href="#" className="btn btn-outline-info"id="button">Linkedin</a>
                             </div>
@@ -71,13 +71,13 @@ export default class Team extends React.Component {
                                 <img src="Assets/Imagens/Projeto/Felipe/perfil-f.jpeg" className="card-img-top"/>
                             </div>
                             <div className="card-body text-dark">
-                                <h2 className="card-title">Felipe Arruda</h2>
+                                <h2 className="card-title">Felipe Augusto</h2>
                                 <p className="card-text text-sencondary">
                                     <label>Função: Editor de Video</label>
                                     <label> Desenvolvedor Web</label>
                                     <label>Curso: Engenharia da Computação</label>
                                 </p>
-                                <a href="#" className="btn btn-outline-primary" id="button">Facebook</a>
+                                <a href="https://www.facebook.com/felipe.augusto.79" className="btn btn-outline-primary" id="button">Facebook</a>
                                 <a href="#" className="btn btn-outline-danger"id="button">Instagram</a>
                                 <a href="#" className="btn btn-outline-info"id="button">Linkedin</a>
                             </div>
@@ -111,13 +111,15 @@ export default class Team extends React.Component {
                                     <label>Função: Diretor do Video</label>
                                     <label>Curso: Engenharia da Computação</label>
                                 </p>
-                                <a href="#" className="btn btn-outline-primary"id="button">Facebook</a>
+                                <a href="https://www.facebook.com/nathan.roque.10" className="btn btn-outline-primary"id="button">Facebook</a>
                                 <a href="#" className="btn btn-outline-danger"id="button">Instagram</a>
                                 <a href="#" className="btn btn-outline-info"id="button">Linkedin</a>
                             </div>
                          </div> 
                     </div>
                 </Row>
+                <br/>
+                <br/>
              </div>
 		    
 	    );

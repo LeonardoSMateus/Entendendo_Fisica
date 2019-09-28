@@ -13,7 +13,7 @@ export default class HeaderNavbar extends React.Component{
     render(){
         return ( <div width="100%">
                     <Navbar bg="dark" variant="dark">
-                        <Navbar.Brand href="#home">Entendendo Fisica</Navbar.Brand>
+                        <Navbar.Brand href="#home" id="Inicio">Entendendo Fisica</Navbar.Brand>
                         <Nav className="mr-auto">
                         <Nav.Link href="#Sobre" id="menu">Sobre</Nav.Link>
                         <Nav.Link href="#Conteudo">Conteudos</Nav.Link>
