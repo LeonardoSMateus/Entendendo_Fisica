@@ -1,3 +1,6 @@
 #div-conteudo{
     background-color:rgb(41, 142, 201);
 }
+.flex-container {
+    display: flex;
+  }

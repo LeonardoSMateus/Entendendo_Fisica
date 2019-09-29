@@ -13,7 +13,23 @@ function App() {
     <div className="App">
         <HeaderNavbar/>
         <About/>
-        <TabsNav/>
+        <TabsNav title="Capitulo 1" videos={[
+            {
+               "title": "Exercicio 1",
+               "videoId": "aBlKPLeLU_s"
+            },
+            {
+               "title": "Exercicio 2",
+               "videoId": "aBlKPLeLU_s"
+            },
+            {
+               "title": "Exercicio 3",
+               "videoId": "aBlKPLeLU_s"
+            }, {
+               "title": "Exercicio 4",
+               "videoId": "aBlKPLeLU_s"
+            }
+           ]}/>
         <Team/>
         <Footer/>
     </div>

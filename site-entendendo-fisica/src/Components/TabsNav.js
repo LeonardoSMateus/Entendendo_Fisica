@@ -8,57 +8,57 @@ import './Styles/Tabsnav.css';
 
 export default class TabsNav extends React.Component {
 
+    constructor(props){
+        super(props);
+        this.title = props.title;
+        this.videos = props.videos;
+        //  [
+        //     {
+        //        "title": "Exercicio 1",
+        //        "videoId": "aBlKPLeLU_s"
+        //     },
+        //     {
+        //        "title": "Exercicio 2",
+        //        "videoId": "aBlKPLeLU_s"
+        //     },
+        //     {
+        //        "title": "Exercicio 3",
+        //        "videoId": "aBlKPLeLU_s"
+        //     }, {
+        //        "title": "Exercicio 4",
+        //        "videoId": "aBlKPLeLU_s"
+        //     }
+        //    ];
+        this.state = {
+            "currentIndex": 2
+        };
+        console.log("Tab render");
+        
+    }
+  
+
     render() {
         return (
             <div id="div-conteudo">
                 <br/>
-                <Tabs id="div-conteudo">
-                    <Tab eventKey="chapter1" title="Capítulo I" id="div-conteudo">
-                        <Container id="div-conteudo">
-                            <Row>
-                                <Col>
-                                    {[
-                                     {
-                                        "title": "Exercicio 1",
-                                        "videoId": "aBlKPLeLU_s"
-                                     },
-                                     {
-                                        "title": "Exercicio 2",
-                                        "videoId": "aBlKPLeLU_s"
-                                     },
-                                     {
-                                        "title": "Exercicio 3",
-                                        "videoId": "aBlKPLeLU_s"
-                                     }, {
-                                        "title": "Exercicio 4",
-                                        "videoId": "aBlKPLeLU_s"
-                                     }
-                                    ].map((video, index) =>
-                                        <div key={index}>
-
-                                            < Button>{video.title}</Button>
-                                            <br></br>
-                                         </div>
-                                     )}
+                <Tabs>
+                    <Tab eventKey="chapter1" title={this.title}>
+                        <Container fluid={true}>
+                            <Row >
+                                <Col >
+                                        {this.videos.map((video, index) =>
+                                            <div key={index} style={{height: 100}}>
+                                                <Row style={{paddingLeft: 10, paddingTop: 15}} >
+                                                    < Button variant="primary" style={{height: 40, paddingLeft: 20}}  onClick={() => {this.setState({"currentIndex" : index}); console.log(this.state.currentIndex);}}>{video.title}</Button>
+                                                </Row>
+                                            </div>
+                                        )}
+                                    
                                  </Col>
-                                 <Col>
+                                 <Col xs={10}>
                                     <Chapter chapterInfo={{
-                                        "title": "Capítulo I",
-                                        "videos": [
-                                            {
-                                                "title": "Exercicio 1",
-                                                "videoId": "aBlKPLeLU_s"
-                                            },
-                                            {
-                                                "title": "Exercicio 2",
-                                                "videoId": "aBlKPLeLU_s"
-                                            },
-                                            {
-                                                "title": "Exercicio 3",
-                                                "videoId": "aBlKPLeLU_s"
-                                            }
-                                         ],
-                                        "currentIndex": 0
+                                        "videos": this.videos,
+                                        "currentIndex": this.state.currentIndex
                                      }} />
                                 </Col>
                              </Row>

@@ -6,7 +6,13 @@ export default class Chapter extends React.Component {
 
     constructor(props) {
         super(props);
-        this.chapterInfo = props.chapterInfo;
+        this.state = {chapterInfo : props.chapterInfo};
+        console.log(JSON.stringify(props.chapterInfo));
+    }
+    componentDidUpdate(prevProps, prevState){
+        if(this.state.chapterInfo.currentIndex !== prevProps.chapterInfo.currentIndex){
+            this.state.chapterInfo.currentIndex = prevProps.chapterInfo.currentIndex;
+        }
     }
     render() {
         const opts = {
@@ -18,9 +24,9 @@ export default class Chapter extends React.Component {
         };
         return (
             <div id="Conteudo">
-                <h1> {this.chapterInfo.title} </h1>
+                <h1> {this.state.chapterInfo.videos[this.state.chapterInfo.currentIndex].title} </h1>
 
-                <Youtube videoId={this.chapterInfo.videos[this.chapterInfo.currentIndex].videoId}
+                <Youtube videoId={this.state.chapterInfo.videos[this.state.chapterInfo.currentIndex].videoId}
                     opts={opts}
                     onReady={this._onReady}
                 />
