@@ -28,5 +28,9 @@
     transform: scale(1.8);
 }
 
+#div-img{
+    max-height: 330px;
+    background: linear-gradient(#f3f3f3, #ffffff,#f3f3f3);
+}
 
 /*background-color: rgb(9, 69, 104);*/

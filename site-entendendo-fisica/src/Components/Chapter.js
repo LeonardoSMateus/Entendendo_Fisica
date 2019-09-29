@@ -24,7 +24,8 @@ export default class Chapter extends React.Component {
                     opts={opts}
                     onReady={this._onReady}
                 />
-
+                <br/>
+                <br/>
             </div>
         );
     }

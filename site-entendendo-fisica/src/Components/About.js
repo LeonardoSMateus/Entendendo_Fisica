@@ -3,10 +3,11 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import SliderCarousel from './SliderCarousel';
 import './Styles/About.css';
+
 export default class About extends React.Component {
     render() {
         return (
-            <div id="Sobre">
+            <div id="Sobre" className="container-fluid">
                 <Container>
                     <Row>
                         <Col id="Texto">

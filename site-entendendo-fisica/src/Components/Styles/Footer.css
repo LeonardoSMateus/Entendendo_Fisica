@@ -1,5 +1,5 @@
 #rodape{
-    
+    max-height: 50px;
 }
 
 #icon{
@@ -7,4 +7,7 @@
     text-align: end;
 }
 
-
+#utf{
+    background-color: #353942;
+    float: right;
+}
