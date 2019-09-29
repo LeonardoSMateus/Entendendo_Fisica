@@ -1,7 +1,6 @@
 import React from 'react';
 import {Container, Row, Col, Nav, Navbar} from 'react-bootstrap';
 import './Styles/Footer.css';
-import 'C:/Users/LeoSouza/Desktop/UTFPR/ENTENDENDO FÍSICA/site-entendendo-fisica/node_modules/font-awesome/css/font-awesome.min.css';
 
 export default class Footer extends React.Component{
     render(){

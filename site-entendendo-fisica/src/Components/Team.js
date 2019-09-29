@@ -14,7 +14,7 @@ export default class Team extends React.Component {
                     <div className="col-md-4" id="Sandra">
                         <div className="card text-center shadow">
                             <div className="overflow">
-                                <img src="../Assets/Imagens/Projeto/Sandra/perfil-n.jpg" alt="Foto Pefil" className="card-img-top"/>
+                                <img src={require('../Assets/Imagens/Sandra/perfil-n.gif')} alt="Foto Pefil" className="card-img-top"/>
                             </div>
                             <div className="card-body text-dark">
                                 <h2 className="card-title">Sandra Mara Domiciano</h2>
@@ -31,7 +31,7 @@ export default class Team extends React.Component {
                     <div className="col-md-4" id="Adilson">
                         <div className="card text-center shadow">
                             <div className="overflow">
-                                <img src="C:/Users/LeoSouza/Desktop/UTFPR/ENTENDENDO FÍSICA/site-entendendo-fisica/src/Assets/Imagens/Adilson/perfil-a.jpeg" className="card-img-top" alt=""/>
+                                <img src={require('../Assets/Imagens/Adilson/perfil-a.jpg')} className="card-img-top" alt=""/>
                             </div>
                             <div className="card-body text-dark">
                                 <h2 className="card-title">Adilson Frank Neia</h2>
@@ -48,7 +48,7 @@ export default class Team extends React.Component {
                     <div className="col-md-4" id="Carlos">
                         <div className="card text-center shadow">
                             <div className="overflow">
-                                <img src="Assets/Imagens/Projeto/Carlos/perfil-c.jpeg" className="card-img-top"/>
+                                <img src={require('../Assets/Imagens/Carlos/perfil-c.jpg')} className="card-img-top"/>
                             </div>
                             <div className="card-body text-dark">
                                 <h2 className="card-title">Carlos Vinicius</h2>
@@ -68,7 +68,7 @@ export default class Team extends React.Component {
                     <div className="col-md-4" id="Felipe">
                         <div className="card text-center shadow">
                             <div className="overflow">
-                                <img src="Assets/Imagens/Projeto/Felipe/perfil-f.jpeg" className="card-img-top"/>
+                                <img src={require('../Assets/Imagens/Felipe/perfil-f.jpg')} className="card-img-top"/>
                             </div>
                             <div className="card-body text-dark">
                                 <h2 className="card-title">Felipe Augusto</h2>
@@ -86,7 +86,7 @@ export default class Team extends React.Component {
                     <div className="col-md-4" id="Leonardo">
                         <div className="card text-center shadow">
                             <div className="overflow">
-                                <img src="Assets/Imagens/Projeto/Leonardo/perfil-l.jpeg" className="card-img-top"/>
+                                <img src={require('../Assets/Imagens/Leonardo/perfil-l.jpg')} className="card-img-top"/>
                             </div>
                             <div className="card-body text-dark">
                                 <h2 className="card-title">Leonardo de Souza</h2>
@@ -103,7 +103,7 @@ export default class Team extends React.Component {
                     <div className="col-md-4" id="Nathan">
                         <div className="card text-center shadow">
                             <div className="overflow">
-                                <img src="Assets/Imagens/Projeto/Nathan/perfil-n.jpeg" className="card-img-top"/>
+                                <img src={require('../Assets/Imagens/Nathan/perfil-n.jpg')} className="card-img-top"/>
                             </div>
                             <div className="card-body text-dark">
                                 <h2 className="card-title">Nathan Roque</h2>
