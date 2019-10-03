@@ -9,11 +9,7 @@ export default class Chapter extends React.Component {
         this.state = {chapterInfo : props.chapterInfo};
         console.log(JSON.stringify(props.chapterInfo));
     }
-    componentDidUpdate(prevProps, prevState){
-        if(this.state.chapterInfo.currentIndex !== prevProps.chapterInfo.currentIndex){
-            this.state.chapterInfo.currentIndex = prevProps.chapterInfo.currentIndex;
-        }
-    }
+
     render() {
         const opts = {
             height: '390',
@@ -24,9 +20,9 @@ export default class Chapter extends React.Component {
         };
         return (
             <div id="Conteudo">
-                <h1> {this.state.chapterInfo.videos[this.state.chapterInfo.currentIndex].title} </h1>
+                <h1> {this.props.chapterInfo.videos[this.props.chapterInfo.currentIndex].title} </h1>
 
-                <Youtube videoId={this.state.chapterInfo.videos[this.state.chapterInfo.currentIndex].videoId}
+                <Youtube videoId={this.props.chapterInfo.videos[this.props.chapterInfo.currentIndex].videoId}
                     opts={opts}
                     onReady={this._onReady}
                 />
